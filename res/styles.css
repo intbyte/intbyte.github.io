@@ -1,0 +1,347 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+	padding: 1.5rem;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+}
+/*Self introduction*/
+.introduction {
+	display: none;
+}
+.dextop {
+	text-align: center;
+	position: relative;
+}
+.cover_image {
+	display: block;
+	text-align: center;
+}
+.cover_image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.grad {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 70%;
+	height: 100%;
+	background: linear-gradient(to left, rgba(255, 230, 60, .5), rgba(255, 246, 156, 0));
+}
+.profile_description {
+	/**/margin-top: 5rem;
+	/**/margin-bottom: 1rem;
+	/**/margin-left: 3rem;
+	/**/margin-right: 1rem;
+}
+.name {
+	font-family: 'Raleway', sans-serif;
+	font-size: 4.5rem;
+	margin: 4vw;
+}
+.bio {
+	font-size: 2.5vw;
+	padding-bottom: 0;
+	margin: 30px;
+	margin-top: 20px;
+}
+/*Work Experiences*/
+.skills {
+	margin: 20px;
+	margin-bottom: 5px;
+}
+.tags {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.s {
+	padding: 5px 10px;
+	margin: 5px;
+	border: solid;
+	border-width: 1.5px;
+	border-radius: 20px;
+	border-color: darkgrey;
+	font-size: 16px;
+	color: grey;
+}
+.a {
+	margin-bottom: 5px; 
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+/*Showcase*/
+.recent {
+	justify-content: center;
+	margin: 10vh;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 0;
+}
+.show {
+	/**/display: flex;
+	/**/flex-flow: row wrap;
+	/**/justify-content: center;
+}
+.panel_title {
+	/**/text-align: center;
+	padding-bottom: 25px;
+	font-size: 35px;
+}
+.title_info {
+	/**/text-align: center;
+	padding-top: 10px;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+.post {
+	/**/margin: 20px;
+	width: 45%;
+	height: auto;
+	background-color: rgb(245, 245, 245);
+	border-radius: 10px;
+	box-shadow: 0px 7px 7px rgba(0, 0, 0, .15);
+}
+.post_image img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 0px 0px;
+}
+.post_info {
+	padding: 2.1rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.75rem;
+}
+.post_time {
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, .4);
+}
+.post_title h1{
+	margin: 10px;
+	margin-left: 0;
+	font-family: 'Raleway', sans-serif;
+}
+.post_description {
+	font-size: 17px;
+	text-align: justify;
+	padding-bottom: 1vh;
+	font-family: 'Open Sans', sans-serif;
+}
+.last {
+	font-size: 18px;
+	margin: 20px;
+	text-align: center;
+	padding: 20px;
+	padding-top: 0px;
+	padding-bottom: 30px;
+}
+.icons {
+	display: flex;
+	justify-content: center;
+	margin: 5px;
+	margin-bottom: 0;
+}
+.ico {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 5px;
+	width: 25px;
+}
+.ico img{
+	width: 100%;
+	height: auto;
+}
+
+
+@media screen and (max-width: 920px) {
+	.icons {
+		display: none;
+	}
+	.show {
+		display: initial;
+		padding: 0;
+	}
+	.post {
+		margin: 0;
+		width: 100%;
+		height: auto;
+	}
+	.icons {
+		display: flex;
+		justify-content: center;
+		margin: 5px;
+		margin-bottom: 0;
+	}
+	.ico {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 5px;
+		width: 25px;
+	}
+	.ico img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	/*Self introduction*/
+	.introduction {
+		display: initial;
+		text-align: center;
+		color: white;
+		padding: 0;
+		margin-bottom: 50px;
+	}
+	.dextop {
+		display: none;
+	}
+	.cover_image {
+		display: block;
+		position: relative;
+		text-align: center;
+	}
+	.cover_image img {
+		width: 100%;
+		height: auto;
+	}
+	.profile_description {
+		margin: unset;
+		max-width: 100%;
+		position: absolute;
+		bottom: 0;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-bottom: 1vh;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+	}
+	.name {
+		font-family: 'Raleway', sans-serif;
+		font-size: 13vw;
+		margin: 10px;
+	}
+	.bio {
+		font-size: 4vw;
+		padding-bottom: 0;
+		margin: 30px;
+		margin-top: 20px;
+	}
+	/*Work Experiences*/
+	.skills {
+		margin: 20px;
+		margin-bottom: 5px;
+	}
+	.tags {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+	.s {
+		padding: 5px 10px;
+		margin: 5px;
+		border: solid;
+		border-width: 1.5px;
+		border-radius: 20px;
+		border-color: darkgrey;
+		font-size: 16px;
+		color: grey;
+	}
+
+	/*Showcase*/
+	.recent {
+		margin: 4.5vh;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding: 0;
+	}
+	.show {
+		display: initial;
+		padding: 0;
+	}
+	.panel_title {
+		text-align: left;
+		padding-bottom: 25px;
+		font-size: 35px;
+	}
+	.title_info {
+		text-align: left;
+		padding-top: 10px;
+		font-size: 18px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.post {
+		margin: 0;
+		width: 100%;
+		height: auto;
+		background-color: rgb(245, 245, 245);
+		border-radius: 10px;
+		box-shadow: 0px 7px 7px rgba(0, 0, 0, .15);
+	}
+	.post_image img {
+		width: 100%;
+		height: auto;
+		border-radius: 10px 10px 0px 0px;
+	}
+	.post_info {
+		padding: 2.1rem;
+		padding-top: 1.5rem;
+		padding-bottom: 1.75rem;
+	}
+	.post_time {
+		font-weight: 600;
+		font-size: 1rem;
+		text-transform: uppercase;
+		color: rgba(0, 0, 0, .4);
+	}
+	.post_title h1{
+		margin: 10px;
+		margin-left: 0;
+		font-family: 'Raleway', sans-serif;
+	}
+	.post_description {
+		font-size: 17px;
+		text-align: justify;
+		padding-bottom: 1vh;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.last {
+		font-size: 18px;
+		margin: 20px;
+		text-align: center;
+		padding: 20px;
+		padding-top: 0px;
+		padding-bottom: 30px;
+	}
+	.icons {
+		display: flex;
+		justify-content: center;
+		margin: 5px;
+		margin-bottom: 0;
+	}
+	.ico {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 5px;
+		width: 25px;
+	}
+	.ico img {
+		width: 100%;
+		height: auto;
+	}
+}
